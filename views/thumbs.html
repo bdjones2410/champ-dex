@@ -1,0 +1,42 @@
+<header>
+  <div class="container">
+    <nav class="topnav">
+      <ul class="navigationUL">
+        <li class="navlinkone"><a href="#/">Home</a></li>
+        <li class="navlinktwo"><a href="#/">Favorites</a></li>
+        <li class="riot"><h1>Champ-&eacute-dex</h1></li>
+        <li class="twitter"><a href="#/">twitter</a></li>
+        <li class="facebook"><a href="#/">facebook</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="container">
+  <div class="col-md-10 col-md-offset-1  champfilter searchchamps">
+    <input type="text" placeholder="Search" class="search">
+    <button class="btn btn-primary">search</button>
+  </div>
+    <div class="col-md-10 col-md-offset-1 thumbcontainer">
+      <div ng-repeat="champ in champs" class="col-md-2 champthumbs">
+        <a href="#/champDetails/{{champ.id}}">
+          <img ng-src="http://ddragon.leagueoflegends.com/cdn/5.22.1/img/champion/{{champ.image.full}}" alt="">
+        </a>
+        <span class="champnames">
+        {{champ.id}}
+        </span>
+      </div>
+    </div>
+</section>
+<footer>
+  <div class="container">
+    <nav class="topnav">
+      <ul class="navigationUL">
+        <li class="navlinkone">Home</li>
+        <li class="navlinktwo">Riot Games</li>
+        <li class="riot">&copy 2015</li>
+        <li class="twitter">twitter</li>
+        <li class="facebook">facebook</li>
+      </ul>
+    </nav>
+  </div>
+</footer>

@@ -1,0 +1,145 @@
+/***********************
+        VARIABLES
+************************/
+/*************************************
+              OVERALL
+*************************************/
+body {
+  background-color: #2c3e50;
+  color: #ecf0f1; }
+
+.navlinktwo {
+  color: #DE291E; }
+
+.riot {
+  color: #d35400; }
+
+.twitter {
+  color: #e67e22; }
+
+.facebook {
+  color: #DC291E; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    cursor: pointer; }
+
+/***********************
+        HEADER
+************************/
+header {
+  background-color: #34495e;
+  margin-bottom: 30px; }
+  header h1 {
+    color: #f1c40f; }
+
+.topnav {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+  .topnav .navigationUL {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block; }
+    .topnav .navigationUL li {
+      list-style: none;
+      display: inline-block;
+      margin: 10px 40px; }
+      .topnav .navigationUL li h1 {
+        font-size: 4em; }
+
+/***********************
+        FOOTER
+************************/
+footer {
+  clear: both; }
+
+/*************************************
+              THUMB
+*************************************/
+/***********************
+        SEARCH
+************************/
+.searchchamps {
+  padding: 10px;
+  background-color: #DC291E;
+  border-bottom: 2px solid #d35400;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px; }
+
+/***********************
+      SECTION
+************************/
+.thumbcontainer {
+  background-color: #34495e;
+  padding: 15px;
+  margin-bottom: 30px; }
+
+.champthumbs {
+  padding-bottom: 15px;
+  padding-top: 15px; }
+  .champthumbs img {
+    border: 3px outset #f1c40f;
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+
+/*************************************
+              SPLASH
+*************************************/
+.splashName {
+  text-align: center;
+  font-size: 5em;
+  margin-top: 0; }
+
+.splashTitle {
+  text-align: center;
+  color: #DE291E; }
+
+.splashArt {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px; }
+  .splashArt img {
+    width: 100%; }
+
+.loadingart {
+  vertical-align: top;
+  display: inline-block;
+  width: 100px;
+  margin: 5px; }
+  .loadingart img {
+    width: 100%; }
+  .loadingart span {
+    display: block;
+    word-wrap: break-word; }
+
+.skincollection {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px; }
+
+.champlore {
+  display: inline-block;
+  width: 50%; }
+
+.champsAside {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top; }
+
+.champSkins:hover {
+  cursor: pointer; }
+
+.champspells {
+  display: inline-block; }
+  .champspells:hover {
+    cursor: pointer; }
+
+/*************************************
+              FAVORITES
+*************************************/

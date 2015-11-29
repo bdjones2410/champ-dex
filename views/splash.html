@@ -1,0 +1,46 @@
+<header>
+  <div class="container">
+    <nav class="topnav">
+      <ul class="navigationUL">
+        <li class="navlinkone"><a href="#/">Home</a></li>
+        <li class="navlinktwo"><a href="#/">Favorites</a></li>
+        <li class="riot"><h1>Champ-&eacute-dex</h1></li>
+        <li class="twitter"><a href="#/">twitter</a></li>
+        <li class="facebook"><a href="#/">facebook</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="container">
+    <h1 class="splashName">{{champs.id | uppercase}}</h1>
+    <h3 class="splashTitle">{{champs.title | lowercase}}</h3>
+    <div class="splashArt">
+      <img ng-src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{champs.id}}_{{skinnum}}.jpg" alt="" />
+    </div>
+    <div class="skincollection">
+    <div ng-repeat="skins in champs.skins"class="loadingart">
+      <img ng-click="changenum(skins.num)" class="champSkins" ng-src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/{{champs.id}}_{{skins.num}}.jpg" alt="">
+      <span>{{skins.name}}</span>
+    </div>
+    </div>
+    <article  class="champlore">
+      <div ng-bind-html="champslore"></div>
+
+    </article>
+    <aside class="champsAside">
+      <div class="abilities">
+        <div ng-repeat="spells in champs.spells" class="champspells">
+          <img ng-click="newSpell(spells.description)" src="http://ddragon.leagueoflegends.com/cdn/5.23.1/img/spell/{{spells.id}}.png" alt="">
+          <span>{{spells.name}}</span>
+        </div>
+      </div>
+      <div class="abilitydescript">
+        {{spelldescript}}
+      </div>
+    </aside>
+
+
+
+
+
+</section>

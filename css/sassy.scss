@@ -1,0 +1,181 @@
+
+/***********************
+        VARIABLES
+************************/
+
+$background:#2c3e50;
+$lightgrey:#34495e;
+$lightred:#e74c3c;
+$lightgold:#f1c40f;
+$darkgold:#f39c12;
+$silver:#bdc3c7;
+$clouds:#ecf0f1;
+$pumpkin:#d35400;
+$carrot:#e67e22;
+$riotred:#DC291E;
+$riotred2:#DE291E;
+/*************************************
+              OVERALL
+*************************************/
+body{
+  background-color:$background;
+  color:$clouds;
+}
+.navlinktwo{
+  color:$riotred2;
+}
+.riot{
+  color:$pumpkin;
+}
+.twitter{
+  color:$carrot;
+}
+.facebook{
+  color:$riotred;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+/***********************
+        HEADER
+************************/
+header{
+  background-color:$lightgrey;
+  margin-bottom:30px;
+  h1{
+    color:$lightgold
+  }
+}
+.topnav{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom:30px;
+  .navigationUL{
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    li{
+      list-style: none;
+      display:inline-block;
+      margin: 10px 40px;
+      h1{
+        font-size: 4em;
+      }
+    }
+  }
+}
+
+
+/***********************
+        FOOTER
+************************/
+footer{
+  clear:both;
+}
+
+
+/*************************************
+              THUMB
+*************************************/
+
+/***********************
+        SEARCH
+************************/
+.searchchamps{
+  padding:10px;
+  background-color:$riotred;
+  border-bottom:2px solid $pumpkin;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/***********************
+      SECTION
+************************/
+.thumbcontainer{
+  background-color:$lightgrey;
+  padding:15px;
+  margin-bottom:30px;
+}
+.champthumbs{
+    padding-bottom:15px;
+    padding-top:15px;
+  img{
+    border:3px outset $lightgold;
+    display:block;
+    margin:0 auto;
+    width:100%;
+  }
+}
+
+/*************************************
+              SPLASH
+*************************************/
+.splashName{
+  text-align: center;
+  font-size:5em;
+  margin-top:0;
+}
+.splashTitle{
+  text-align: center;
+  color:$riotred2;
+}
+.splashArt{
+  width:80%;
+  margin: 0 auto;
+  margin-bottom:5px;
+  img{
+    width:100%;
+  }
+}
+.loadingart{
+  vertical-align: top;
+  display:inline-block;
+  width:100px;
+  margin:5px;
+  img{
+    width:100%;
+  }
+  span{
+  display:block;
+  word-wrap: break-word;
+  }
+}
+.skincollection{
+  width: 80%;
+  margin: auto;
+  margin-bottom:30px;
+}
+.champlore{
+  display:inline-block;
+  width:50%;
+}
+.champsAside{
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+.champSkins{
+  &:hover{
+    cursor: pointer;
+  }
+}
+.champspells{
+  display:inline-block;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+
+
+/*************************************
+              FAVORITES
+*************************************/
