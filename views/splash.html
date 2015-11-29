@@ -11,7 +11,7 @@
     </nav>
   </div>
 </header>
-<section class="container">
+<section class="container splashcont">
     <h1 class="splashName">{{champs.id | uppercase}}</h1>
     <h3 class="splashTitle">{{champs.title | lowercase}}</h3>
     <div class="splashArt">
@@ -24,8 +24,10 @@
     </div>
     </div>
     <article  class="champlore">
-      <div ng-bind-html="champslore"></div>
+      <div ng-bind-html="champslore">
 
+      </div>
+      {{champs.lore}}
     </article>
     <aside class="champsAside">
       <div class="abilities">
@@ -38,9 +40,17 @@
         {{spelldescript}}
       </div>
     </aside>
-
-
-
-
-
 </section>
+<footer>
+  <div class="container">
+    <nav class="topnav">
+      <ul class="navigationUL">
+        <li class="navlinkone">Home</li>
+        <li class="navlinktwo">Riot Games</li>
+        <li class="riot">&copy 2015</li>
+        <li class="twitter">twitter</li>
+        <li class="facebook">facebook</li>
+      </ul>
+    </nav>
+  </div>
+</footer>

@@ -125,7 +125,8 @@ footer {
 
 .champlore {
   display: inline-block;
-  width: 50%; }
+  width: 50%;
+  padding: 0 30px; }
 
 .champsAside {
   display: inline-block;
@@ -136,9 +137,22 @@ footer {
   cursor: pointer; }
 
 .champspells {
-  display: inline-block; }
+  display: inline-block;
+  text-overflow: hidden;
+  margin: 0 5px;
+  width: 75px;
+  vertical-align: top;
+  margin-bottom: 9px; }
+  .champspells img {
+    width: 100%;
+    border: 3px outset #f1c40f; }
+  .champspells span {
+    display: block; }
   .champspells:hover {
     cursor: pointer; }
+
+.splashcont {
+  margin-bottom: 30px; }
 
 /*************************************
               FAVORITES
