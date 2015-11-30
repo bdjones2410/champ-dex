@@ -4,6 +4,7 @@
     angular
       .module('champSplash', [
         'ngRoute',
+        'ngSanitize'
       ])
       .config(function($routeProvider){
           $routeProvider

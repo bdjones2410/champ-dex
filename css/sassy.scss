@@ -95,6 +95,9 @@ footer{
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
+.search{
+  color:black;
+}
 
 /***********************
       SECTION
@@ -155,13 +158,20 @@ footer{
 }
 .champlore{
   display:inline-block;
+  text-align: center;
   width:50%;
-  padding:0 30px;
+  padding:20px 35px;
+  margin:0 30px;
+  background-color:$lightgrey;
+  line-height: 2em;
 }
 .champsAside{
   display: inline-block;
   width: 40%;
   vertical-align: top;
+  background-color: #34495e;
+  padding: 20px 5px;
+  text-align: center;
 }
 .champSkins{
   &:hover{

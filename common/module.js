@@ -4,9 +4,10 @@
     angular
       .module('champInfo', [
         'ngRoute',
+        'ngSanitize',
         'underscore',
         'champSplash',
-        'champFaves'
+        'champFaves',
 
       ])
       .config(function($routeProvider){

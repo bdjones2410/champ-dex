@@ -13,11 +13,10 @@
 </header>
 <section class="container">
   <div class="col-md-10 col-md-offset-1  champfilter searchchamps">
-    <input type="search" ng-model="search.name" placeholder="Search" class="search">
-    <button class="btn btn-primary">search</button>
+    <input type="search" ng-model="searchname" placeholder="Search" class="search">
   </div>
     <div class="col-md-10 col-md-offset-1 thumbcontainer">
-      <div ng-repeat="champ in champs" class="col-md-2 champthumbs">
+      <div ng-repeat="champ in champs | filter:searchname" class="col-md-2 champthumbs">
         <a href="#/champDetails/{{champ.id}}">
           <img ng-src="http://ddragon.leagueoflegends.com/cdn/5.22.1/img/champion/{{champ.image.full}}" alt="">
         </a>
@@ -32,8 +31,8 @@
     <nav class="topnav">
       <ul class="navigationUL">
         <li class="navlinkone">Home</li>
-        <li class="navlinktwo">Riot Games</li>
-        <li class="riot">&copy 2015</li>
+        <li class="navlinktwo">Favorites</li>
+        <li class="riot"><a href="http://www.riotgames.com/"><img src="http://www.riotgames.com/sites/all/themes/riot/media/images/logo.jpg" alt=""></a></li>
         <li class="twitter">twitter</li>
         <li class="facebook">facebook</li>
       </ul>
