@@ -1,7 +1,7 @@
 <champ-header></champ-header>
 <section class="container splashcont" ng-contoller="champController as champCtrl">
     <h1 class="splashName">{{champCtrl.champs.id | uppercase}}</h1>
-    <h3 class="splashTitle">{{champCtrl.champs.title | lowercase}}</h3>
+    <h3 class="splashTitle">{{champCtrl.champs.title}}</h3>
     <div class="splashArt">
       <img ng-src="{{champCtrl.champs.image.splashbase}}_{{champCtrl.skinnum}}.jpg" alt="" />
     </div>
@@ -24,8 +24,8 @@
           <span>{{spells.name}}</span>
         </div>
       </div>
-      <div class="abilitydescript">
-        {{champCtrl.spelldescript}}
+      <div class="abilitydescript" ng-bind-html="champCtrl.spelldescript">
+
       </div>
     </aside>
 </section>

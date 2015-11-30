@@ -11,7 +11,7 @@
       vm.champDescipt= "";
 
 
-      vm.newSpell = function(descript, name){
+      vm.newSpell = function(descript){
         vm.spelldescript = descript;
       };
 
