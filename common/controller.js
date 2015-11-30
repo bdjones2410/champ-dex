@@ -3,8 +3,10 @@
     angular
       .module('champInfo')
       .controller('mainController', function($scope, champService){
+        var vm = this;
         champService.getThumbs().then(function(champs){
-          $scope.champs = champs;
+          vm.champs = champs;
+
         });
 
       });

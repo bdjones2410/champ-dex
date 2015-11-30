@@ -3,25 +3,25 @@
     angular
     .module('champSplash')
     .controller('champController', function($scope, splashService, $routeParams, $sce){
-      $scope.skinnum = 0;
-      $scope.changenum=function(num){
-        $scope.skinnum = num;
+      var vm = this;
+      vm.skinnum = 0;
+      vm.changenum=function(num){
+        vm.skinnum = num;
       };
-      $scope.champDescipt= "";
+      vm.champDescipt= "";
 
 
-      $scope.newSpell = function(descript, name){
-        $scope.spelldescript = descript;
+      vm.newSpell = function(descript, name){
+        vm.spelldescript = descript;
       };
 
 
 
       if($routeParams.champID){
-        console.log($routeParams.champID);
         var thisid = $routeParams.champID;
         splashService.getChampSplash($routeParams.champID).then(function(champs){
-            $scope.champs = champs[0];
-            $scope.champslore = champs[0].lore;
+            vm.champs = champs[0];
+            vm.champslore = champs[0].lore;
 
         });
       }

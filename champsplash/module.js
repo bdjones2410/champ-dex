@@ -11,7 +11,7 @@
 
             .when('/champDetails/:champID',{
               templateUrl:'views/splash.html',
-              controller:'champController'
+              controller:'champController as champCtrl'
             });
 
 

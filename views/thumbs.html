@@ -1,24 +1,12 @@
-<header>
-  <div class="container">
-    <nav class="topnav">
-      <ul class="navigationUL">
-        <li class="navlinkone"><a href="#/">Home</a></li>
-        <li class="navlinktwo"><a href="#/">Favorites</a></li>
-        <li class="riot"><h1>Champ-&eacute-dex</h1></li>
-        <li class="twitter"><a href="#/">twitter</a></li>
-        <li class="facebook"><a href="#/">facebook</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<section class="container">
+<champ-header></champ-header>
+<section  ng-controller="mainController as mainCtrl"class="container">
   <div class="col-md-10 col-md-offset-1  champfilter searchchamps">
     <input type="search" ng-model="searchname" placeholder="Search" class="search">
   </div>
     <div class="col-md-10 col-md-offset-1 thumbcontainer">
-      <div ng-repeat="champ in champs | filter:searchname" class="col-md-2 champthumbs">
+      <div ng-repeat="champ in mainCtrl.champs | filter:searchname" class="col-md-2 champthumbs">
         <a href="#/champDetails/{{champ.id}}">
-          <img ng-src="http://ddragon.leagueoflegends.com/cdn/5.22.1/img/champion/{{champ.image.full}}" alt="">
+          <img ng-src="{{champ.image.full}}" alt="">
         </a>
         <span class="champnames">
         {{champ.id}}
@@ -26,16 +14,4 @@
       </div>
     </div>
 </section>
-<footer>
-  <div class="container">
-    <nav class="topnav">
-      <ul class="navigationUL">
-        <li class="navlinkone">Home</li>
-        <li class="navlinktwo">Favorites</li>
-        <li class="riot"><a href="http://www.riotgames.com/"><img src="http://www.riotgames.com/sites/all/themes/riot/media/images/logo.jpg" alt=""></a></li>
-        <li class="twitter">twitter</li>
-        <li class="facebook">facebook</li>
-      </ul>
-    </nav>
-  </div>
-</footer>
+<champ-footer></champ-footer>
