@@ -11,12 +11,6 @@
       <span>{{skins.name}}</span>
     </div>
     </div>
-    <article  class="champlore">
-      <div ng-bind-html="champCtrl.champslore">
-
-      </div>
-
-    </article>
     <aside class="champsAside">
       <div class="abilities">
         <div ng-repeat="spells in champCtrl.champs.spells | limitTo: 4" class="champspells">
@@ -28,5 +22,11 @@
 
       </div>
     </aside>
+    <article  class="champlore">
+      <div ng-bind-html="champCtrl.champslore">
+
+      </div>
+
+    </article>
 </section>
 <champ-footer></champ-footer>

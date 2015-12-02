@@ -14,6 +14,10 @@ $pumpkin:#d35400;
 $carrot:#e67e22;
 $riotred:#DC291E;
 $riotred2:#DE291E;
+
+$largebreak: 1000px;
+$medbreak: 700px;
+$smbreak:400px;
 /*************************************
               OVERALL
 *************************************/
@@ -46,6 +50,19 @@ a{
 header{
   background-color:$lightgrey;
   margin-bottom:30px;
+  .container{
+    h1{
+      font-size: 4em;
+      text-align: center;
+      display:block;
+      @media screen and(max-width:$medbreak){
+        font-size:3.3em;
+      }
+      @media screen and(max-width:$smbreak){
+        margin-top:35px;
+      }
+    }
+  }
   h1{
     color:$lightgold
   }
@@ -54,26 +71,26 @@ header{
   text-align: center;
   display: block;
   margin: 0 auto;
-  margin-bottom:30px;
+  margin-bottom:15px;
+  margin-top:30px;
+
   .navigationUL{
     margin-top: 0;
     margin-bottom: 10px;
     margin: 0 auto;
     padding: 0;
     display: inline-block;
+    width:100%;
     li{
       list-style: none;
       display:inline-block;
-      margin: 10px 40px;
+      margin: 10px 5%;
       a{
         text-decoration: none;
         color:$clouds;
         &:hover{
           color:$carrot;
         }
-      }
-      h1{
-        font-size: 4em;
       }
     }
   }
@@ -85,6 +102,15 @@ header{
 ************************/
 footer{
   clear:both;
+}
+.riotbanner{
+  text-align: center;
+  max-width: 200px;
+  width:40%;
+  margin:auto;
+  a img{
+    width:100%;
+  }
 }
 
 
@@ -104,6 +130,8 @@ footer{
 }
 .search{
   color:black;
+  margin:auto;
+  display:block;
 }
 
 /***********************
@@ -113,10 +141,17 @@ footer{
   background-color:$lightgrey;
   padding:15px;
   margin-bottom:30px;
+  text-align: center;
+  @media screen and(max-width:$medbreak){
+    height:400px;
+    overflow: scroll;
+  }
 }
 .champthumbs{
     padding-bottom:15px;
     padding-top:15px;
+    max-width: 50%;
+    display: inline-block;
   img{
     border:3px outset $lightgold;
     display:block;
@@ -150,6 +185,9 @@ footer{
   display:inline-block;
   width:100px;
   margin:5px;
+  @media screen and(max-width: $medbreak){
+    width:60px;
+  }
   img{
     width:100%;
   }
@@ -163,6 +201,15 @@ footer{
   margin: auto;
   margin-bottom:30px;
   text-align: center;
+  @media screen and(max-width: $medbreak){
+    overflow: scroll;
+    max-height: 175px;
+    border:1px solid $lightgold;
+    background-color:#1c1c1c;
+    span{
+      display: none;
+    }
+  }
 }
 .champlore{
   display:inline-block;
@@ -172,6 +219,11 @@ footer{
   margin:0 30px;
   background-color:$lightgrey;
   line-height: 2em;
+  @media screen and(max-width: $medbreak){
+    width:100%;
+
+    margin:0 0 20px 0;
+  }
 }
 .champsAside{
   display: inline-block;
@@ -180,6 +232,10 @@ footer{
   background-color: #34495e;
   padding: 20px 5px;
   text-align: center;
+  @media screen and(max-width: $medbreak){
+    width:100%;
+    margin-bottom:20px;
+  }
 }
 .champSkins{
   &:hover{
@@ -193,6 +249,21 @@ footer{
   width: 75px;
   vertical-align: top;
   margin-bottom: 9px;
+  @media screen and(max-width: $largebreak){
+    float:left;
+    clear:both;
+  }
+  @media screen and(max-width: $medbreak){
+  float:none;
+  clear:none;
+  }
+  @media screen and(max-width: $smbreak){
+    width: 20%;
+    word-wrap: break-word;
+    span{
+      font-size:.7em;
+    }
+  }
   img{
     width:100%;
     border:3px outset $lightgold;
@@ -202,6 +273,16 @@ footer{
   }
   &:hover{
     cursor: pointer;
+  }
+}
+.abilitydescript{
+  @media screen and(max-width: $largebreak){
+    display:inline-block;
+    width:50%;
+    margin-top:35%;
+  }
+  @media screen and(max-width: $medbreak){
+    margin-top:5%;
   }
 }
 

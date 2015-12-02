@@ -1,10 +1,10 @@
 <champ-header></champ-header>
 <section  ng-controller="mainController as mainCtrl"class="container">
   <div class="col-md-10 col-md-offset-1  champfilter searchchamps">
-    <input type="search" ng-model="searchname" placeholder="Search" class="search">
+    <input type="search" ng-model="search.name" placeholder=" Search by Name" class="search">
   </div>
     <div class="col-md-10 col-md-offset-1 thumbcontainer">
-      <div ng-repeat="champ in mainCtrl.champs | filter:searchname" class="col-md-2 champthumbs">
+      <div ng-repeat="champ in mainCtrl.champs | filter:search" class="col-md-2 champthumbs">
         <a href="#/champDetails/{{champ.id}}">
           <img ng-src="{{champ.image.full}}" alt="">
         </a>
