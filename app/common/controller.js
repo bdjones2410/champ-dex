@@ -6,8 +6,6 @@
         var vm = this;
         champService.getThumbs().then(function(champs){
           vm.champs = champs;
-          console.log(champs);
-
         });
 
       });

@@ -22,7 +22,6 @@
         splashService.getChampSplash($routeParams.champID).then(function(champs){
             vm.champs = champs[0];
             vm.champslore = champs[0].lore;
-            console.log(champs[0]);
 
         });
       }
