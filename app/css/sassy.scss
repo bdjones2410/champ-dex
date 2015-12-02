@@ -51,6 +51,12 @@ a{
 header{
   background-color:$lightgrey;
   margin-bottom:30px;
+  @media screen and(max-width:$medbreak){
+    background-color:$background;
+    div.container {
+      padding:0;
+    }
+  }
   .container{
     h1{
       font-size: 4em;
@@ -78,6 +84,10 @@ header{
   margin: 0 auto;
   margin-bottom:15px;
   margin-top:30px;
+  @media screen and(max-width:$medbreak){
+    background-color:$lightgrey;
+    margin-bottom:0;
+  }
 
   .navigationUL{
     margin-top: 0;
