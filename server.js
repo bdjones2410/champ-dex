@@ -6,7 +6,7 @@ var http = require('http').Sever(app);
 app.use(express.static(__dirname + "/app"));
 
 app.get('/', function(req, res){
-  response.sendFile('app');
+  res.sendFile('app');
 });
 
 
