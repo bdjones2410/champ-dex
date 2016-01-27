@@ -1,6 +1,6 @@
 <champ-header></champ-header>
 <section class="container splashcont" ng-contoller="champController as champCtrl">
-    <h1 class="splashName">{{champCtrl.champs.id | uppercase}}</h1>
+    <h1 class="splashName">{{champCtrl.champs.name | uppercase}}</h1>
     <h3 class="splashTitle">{{champCtrl.champs.title}}</h3>
     <div class="splashArt">
       <img ng-src="{{champCtrl.champs.image.splashbase}}_{{champCtrl.skinnum}}.jpg" alt="" />

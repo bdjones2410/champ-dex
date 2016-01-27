@@ -10,17 +10,19 @@
       var imgTail = "/img/champion/";
       var version = "";
 
-      
+
       var getThumbs = function(){
         return $http.get(getVersion).then(function(data){
           baseUrl = 'http://ddragon.leagueoflegends.com/cdn/'+data.data.css;
           return $http.get(baseUrl+tailUrl);
+
         }).then(function(data){
           var arr = [];
           _.each(data.data.data, function(el){
             el.image.full = baseUrl + imgTail + el.image.full;
             arr.push(el);
           });
+
           return arr;
         });
       };
