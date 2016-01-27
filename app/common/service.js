@@ -22,7 +22,10 @@
             el.image.full = baseUrl + imgTail + el.image.full;
             arr.push(el);
           });
-
+          arr.sort(function(a,b){
+            if(a.name < b.name) return -1;
+            if(a.name > b.name) return 1;
+          });
           return arr;
         });
       };
