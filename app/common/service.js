@@ -26,6 +26,11 @@
             if(a.name < b.name) return -1;
             if(a.name > b.name) return 1;
           });
+          arr.map(function(a){
+            a.name = a.name.toUpperCase();
+            return a.name;
+          });
+
           return arr;
         });
       };

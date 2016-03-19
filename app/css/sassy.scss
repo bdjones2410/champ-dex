@@ -1,4 +1,7 @@
-
+/***********************
+        IMPORTS
+************************/
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 /***********************
         VARIABLES
 ************************/
@@ -25,6 +28,7 @@ $supersmbreak:375px;
 body{
   background-color:$background;
   color:$clouds;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 .navlinktwo{
   color:$riotred2;
@@ -59,17 +63,17 @@ header{
   }
   .container{
     h1{
-      font-size: 4em;
+      font-size: 5em;
       text-align: center;
       display:block;
       @media screen and(max-width:$medbreak){
-        font-size:3.3em;
+        font-size:4.3em;
       }
       @media screen and(max-width:$smbreak){
         margin-top:35px;
       }
       @media screen and(max-width:$supersmbreak){
-        font-size: 2.5em;
+        font-size: 3.5em;
         margin-top:35px;
       }
     }
@@ -84,6 +88,7 @@ header{
   margin: 0 auto;
   margin-bottom:15px;
   margin-top:30px;
+  font-size: 1.5em;
   @media screen and(max-width:$medbreak){
     background-color:$lightgrey;
     margin-bottom:0;
@@ -152,6 +157,29 @@ footer{
   display:block;
 }
 
+.filter-tabs{
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  width:100%;
+  text-align: center;
+  li{
+    list-style: none;
+    display:inline-block;
+    margin: 10px 5%;
+    @media screen and(max-width:$supersmbreak){
+      margin: 10px 2%;
+    }
+  }
+}
+.filter-tab{
+  &:hover{
+    cursor:pointer;
+  }
+}
+
 /***********************
       SECTION
 ************************/
@@ -160,6 +188,7 @@ footer{
   padding:15px;
   margin-bottom:30px;
   text-align: center;
+  font-size:1.4em;
   @media screen and(max-width:$medbreak){
     height:400px;
     overflow: scroll;
