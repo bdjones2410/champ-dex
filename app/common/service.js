@@ -17,7 +17,9 @@
           return $http.get(baseUrl+tailUrl);
 
         }).then(function(data){
+          var retArr = [];
           var arr = [];
+          var idnum = 0;
           _.each(data.data.data, function(el){
             el.image.full = baseUrl + imgTail + el.image.full;
             arr.push(el);
@@ -31,7 +33,26 @@
             return a.name;
           });
 
-          return arr;
+          //build a seperate array from each champ for each type of champ tag.
+          // and return it with the main data load.
+          retArr.push(arr);
+          arr = ["All"];
+          _.each(retArr[0], function(el){
+            _.each(el.tags, function(elm){
+              if(!_.contains(arr, elm)){
+                arr.push(elm);
+              }
+            });
+          });
+
+          //add an id to each tag in the array
+
+          arr = arr.map(function(el){
+            idnum++;
+            return {id:idnum, tag:el};
+          });
+          retArr.push(arr);
+          return retArr;
         });
       };
 

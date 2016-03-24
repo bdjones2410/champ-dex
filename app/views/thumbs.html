@@ -2,17 +2,19 @@
 <section  ng-controller="mainController as mainCtrl"class="container">
   <div class="col-md-10 col-md-offset-1  champfilter searchchamps">
     <input type="search" ng-model="search.name" placeholder=" Search by Name" class="search">
-    <ul class="filter-tabs">
+    <!-- <ul class="filter-tabs">
       <li ng-click="MyFilter = {tags: 'fighter'}"class="filter-tab">Fighter</li>
       <li ng-click="MyFilter = {tags: 'tank'}"class="filter-tab">Tank</li>
       <li ng-click="MyFilter = {tags: 'mage'}"class="filter-tab">Mage</li>
       <li ng-click="MyFilter = {tags: 'assassin'}"class="filter-tab">Assassin</li>
       <li ng-click="MyFilter = {tags: 'support'}"class="filter-tab">Support</li>
       <li ng-click="MyFilter = {tags: 'marksman'}"class="filter-tab">Marksman</li>
-    </ul>
+    </ul> -->
+    <select ng-model="champTags.tag" ng-options="tags.tag for tags in mainCtrl.champTags">
+    </select>
   </div>
     <div class="col-md-10 col-md-offset-1 thumbcontainer">
-      <div ng-repeat="champ in mainCtrl.champs | filter:search| filter: MyFilter" class="col-md-2 champthumbs">
+      <div ng-repeat="champ in mainCtrl.champs | filter:search| filter:MyFilter" class="col-md-2 champthumbs">
         <a href="#/champDetails/{{champ.id}}">
           <img ng-src="{{champ.image.full}}" alt="">
         </a>
