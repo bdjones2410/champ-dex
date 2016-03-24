@@ -8,6 +8,7 @@
         'underscore',
         'champSplash',
         'champFaves',
+        'comingSoon'
 
       ])
       .config(function($routeProvider){

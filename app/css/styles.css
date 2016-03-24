@@ -299,3 +299,7 @@ footer {
 /*************************************
               FAVORITES
 *************************************/
+.comingSoon {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 50px; }
