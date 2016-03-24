@@ -114,12 +114,14 @@ footer {
   background-color: #DC291E;
   border-bottom: 2px solid #d35400;
   border-top-left-radius: 2px;
-  border-top-right-radius: 2px; }
+  border-top-right-radius: 2px;
+  text-align: center; }
 
 .search {
   color: black;
   margin: auto;
-  display: block; }
+  display: inline-block;
+  margin-right: 20px; }
 
 .filter-tabs {
   margin-top: 0;
