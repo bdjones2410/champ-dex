@@ -7,8 +7,7 @@ current patch 6.1.1 has broken api for Wukong champion.   This will be fixed in 
   abilities and art is accessable.  Dynamically loaded from the most up to date patch from Riot's API, which are handled and built in service to automatically be updated the the most recent patch release
 
 ## Roadmap
-*   Adding sorting feature on thumbs page.   will turn clickable types into a dropdown menu to sort champions by tags.  
-*   Create and update links to actually reflect current/future pages.
+*   Update styling on dropdown with search by name filter.   Make one? maybe boot straps built in button w/ dropdown.
 *   Include a way to side-by-side compare multiple champions at once.
 *   Add sortable tabs on main landing page to filter champions by type, role, most/least played.
 *   Add a way to search by summoner name to see summoners win rate with specific champion
